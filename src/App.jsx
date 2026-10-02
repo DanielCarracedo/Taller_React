@@ -1,20 +1,27 @@
+import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import CourseList from './components/CourseList'
-import Counter from './components/Counter'
 import Footer from './components/Footer'
+import Home from './views/Home'
+import Cursos from './views/Cursos'
+import Nosotros from './views/Nosotros'
+import Login from './views/Login'
+import NotFound from './views/NotFound'
 
 function App() {
   return (
-    <>
+    <div className="app">
       <Navbar />
-      <main>
-        <Hero />
-        <CourseList />
-        <Counter />
+      <main className="app__main">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/cursos" element={<Cursos />} />
+          <Route path="/nosotros" element={<Nosotros />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
       </main>
       <Footer />
-    </>
+    </div>
   )
 }
 

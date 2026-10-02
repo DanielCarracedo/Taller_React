@@ -1,6 +1,4 @@
-# ReactAcademy — Taller 03
-
-Landing en React (Vite).
+# ReactAcademy — Taller 04 (Rutas)
 
 ```bash
 npm install

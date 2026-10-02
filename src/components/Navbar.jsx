@@ -1,17 +1,29 @@
+import { Link, NavLink } from 'react-router-dom'
 import './Navbar.css'
 
-const enlaces = ['Inicio', 'Cursos', 'Nosotros']
+const enlaces = [
+  { to: '/', texto: 'Inicio' },
+  { to: '/cursos', texto: 'Cursos' },
+  { to: '/nosotros', texto: 'Nosotros' },
+  { to: '/login', texto: 'Login' },
+]
 
 function Navbar() {
   return (
     <nav className="navbar">
-      <a href="#inicio" className="navbar__logo">
+      <Link to="/" className="navbar__logo">
         ReactAcademy
-      </a>
+      </Link>
       <ul className="navbar__links">
         {enlaces.map((enlace) => (
-          <li key={enlace}>
-            <a href={`#${enlace.toLowerCase()}`}>{enlace}</a>
+          <li key={enlace.to}>
+            <NavLink
+              to={enlace.to}
+              end
+              className={({ isActive }) => (isActive ? 'active' : '')}
+            >
+              {enlace.texto}
+            </NavLink>
           </li>
         ))}
       </ul>

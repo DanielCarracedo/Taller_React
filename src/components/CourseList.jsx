@@ -4,7 +4,7 @@ import './CourseList.css'
 
 function CourseList() {
   return (
-    <section className="courses" id="cursos">
+    <section className="courses">
       <h2 className="courses__title">Nuestros Cursos</h2>
       <p className="courses__subtitle">
         Elige el camino que mejor se adapte a ti

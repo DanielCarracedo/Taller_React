@@ -1,0 +1,44 @@
+.nosotros {
+  background: var(--light);
+  text-align: center;
+  padding: 5rem 1.5rem 6rem;
+}
+
+.nosotros__title {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.nosotros__text {
+  max-width: 640px;
+  margin: 0 auto 3.5rem;
+  color: #666;
+  font-size: 1.15rem;
+}
+
+.nosotros__stats {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.nosotros__stat {
+  background: #fff;
+  min-width: 200px;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07);
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.nosotros__stat strong {
+  color: var(--accent);
+  font-size: 2.4rem;
+}
+
+.nosotros__stat span {
+  color: #666;
+}

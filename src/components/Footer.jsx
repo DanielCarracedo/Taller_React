@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer className="footer">
       <p>
-        © 2026 <span>ReactAcademy</span>. Taller 03 — React Fundamentos.
+        © 2026 <span>ReactAcademy</span>. Taller 04 — React Fundamentos.
       </p>
     </footer>
   )

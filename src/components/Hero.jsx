@@ -1,8 +1,9 @@
+import { Link } from 'react-router-dom'
 import './Hero.css'
 
 function Hero() {
   return (
-    <section className="hero" id="inicio">
+    <section className="hero">
       <h1 className="hero__title">
         Aprende <span>React</span> desde cero
       </h1>
@@ -10,9 +11,9 @@ function Hero() {
         Domina la librería más popular del frontend con proyectos prácticos y
         reales.
       </p>
-      <a href="#cursos" className="hero__button">
+      <Link to="/cursos" className="hero__button">
         Ver Cursos
-      </a>
+      </Link>
     </section>
   )
 }

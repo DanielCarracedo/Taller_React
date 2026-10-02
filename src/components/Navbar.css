@@ -28,3 +28,8 @@
 .navbar__links a:hover {
   color: var(--accent);
 }
+
+.navbar__links a.active {
+  color: var(--accent);
+  font-weight: 600;
+}
