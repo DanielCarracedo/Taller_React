@@ -1,0 +1,24 @@
+.courses {
+  background: var(--light);
+  padding: 5rem 3rem 6rem;
+  text-align: center;
+}
+
+.courses__title {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.courses__subtitle {
+  color: #777;
+  margin-bottom: 3.5rem;
+}
+
+.courses__grid {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  text-align: left;
+}

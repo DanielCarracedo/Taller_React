@@ -1,0 +1,20 @@
+:root {
+  --dark: #1a1a2e;
+  --navy: #16213e;
+  --blue: #0f3460;
+  --accent: #e94560;
+  --light: #f8f9fa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+  background: var(--light);
+  color: var(--dark);
+  line-height: 1.5;
+}
